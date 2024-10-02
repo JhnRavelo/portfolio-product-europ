@@ -69,25 +69,29 @@
   </div>
   <div class="portoflio-product-connexe-container">
     <a href="https://europ-alu.com/portfolio/mur-rideau/">
-      <div class="portoflio-product-connexe-content" style="background-image: url(http://europ-alu.com/wp-content/uploads/2018/11/MUR-RIDEAU-1.jpg);">
+      <div class="portoflio-product-connexe-content"
+        style="background-image: url(http://europ-alu.com/wp-content/uploads/2018/11/MUR-RIDEAU-1.jpg);">
         <span>Mur-Rideau</span>
         <span>Habillage façade</span>
       </div>
     </a>
     <a href="https://europ-alu.com/portfolio/fenetre-oscillo-battante/">
-      <div class="portoflio-product-connexe-content" style="background-image: url(http://europ-alu.com/wp-content/uploads/2015/05/Oscillo-battante-b1.jpg);">
+      <div class="portoflio-product-connexe-content"
+        style="background-image: url(http://europ-alu.com/wp-content/uploads/2015/05/Oscillo-battante-b1.jpg);">
         <span>Fenêtre oscillo-battante</span>
         <span>Portes & Fenêtre</span>
       </div>
     </a>
     <a href="https://europ-alu.com/portfolio/pergolas-motorisee/">
-      <div class="portoflio-product-connexe-content" style="background-image: url(http://europ-alu.com/wp-content/uploads/2018/11/117559972_1003834186710727_5234565162923001571_o.jpg);">
+      <div class="portoflio-product-connexe-content"
+        style="background-image: url(http://europ-alu.com/wp-content/uploads/2018/11/117559972_1003834186710727_5234565162923001571_o.jpg);">
         <span>Pergolas motorisée</span>
         <span>Pergolas</span>
       </div>
     </a>
     <a href="https://europ-alu.com/portfolio/cloison-2/">
-      <div class="portoflio-product-connexe-content" style="background-image: url(http://europ-alu.com/wp-content/uploads/2019/10/MG_7707.jpg);">
+      <div class="portoflio-product-connexe-content"
+        style="background-image: url(http://europ-alu.com/wp-content/uploads/2019/10/MG_7707.jpg);">
         <span>Cloison</span>
         <span>Cloison</span>
       </div>
@@ -146,7 +150,7 @@
       padding: 60px;
       margin-top: 30px;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
     }
 
     .portoflio-description-btn-container {
@@ -184,7 +188,7 @@
     }
 
     .portoflio-title-other-product span {
-      color: #ED4F3D;  
+      color: #ED4F3D;
       letter-spacing: 2px;
       font-size: 14px;
       font-weight: 600;
@@ -212,7 +216,7 @@
     }
 
     .portoflio-product-connexe-content {
-      width: 340px;
+      width: 22vw;
       height: 340px;
       display: flex;
       flex-direction: column;
@@ -238,6 +242,7 @@
     .portoflio-product-connexe-content:hover span:first-child {
       animation: fade-up ease-in 0.3s forwards;
     }
+
     .portoflio-product-connexe-content:hover span:last-child {
       animation: fade-down ease-in 0.3s forwards;
     }
@@ -251,6 +256,7 @@
         transform: translateY(-100px);
         opacity: 0;
       }
+
       to {
         transform: translateY(0px);
         opacity: 1;
@@ -262,15 +268,43 @@
         transform: translateY(100px);
         opacity: 0;
       }
+
       to {
         transform: translateY(0px);
         opacity: 1;
       }
     }
 
+    @media (max-width: 1020px) {
+      .portoflio-description-container {
+        padding: 0px;
+        justify-content: space-evenly;
+        margin-bottom: 40px;
+      }
 
+      .portoflio-description-right {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+      }
 
+      .portoflio-description-right img {
+        margin: 0;
+      }
 
+      .portoflio-product-connexe-container {
+        flex-wrap: wrap;
+        margin: 25px 0px;
+      }
+
+      .portoflio-product-connexe-content {
+        width: 42vw;
+      }
+
+    }
   </style>
 </body>
 
