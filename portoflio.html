@@ -74,19 +74,19 @@
         <span>Habillage façade</span>
       </div>
     </a>
-    <a href="">
+    <a href="https://europ-alu.com/portfolio/fenetre-oscillo-battante/">
       <div class="portoflio-product-connexe-content" style="background-image: url(http://europ-alu.com/wp-content/uploads/2015/05/Oscillo-battante-b1.jpg);">
         <span>Fenêtre oscillo-battante</span>
         <span>Portes & Fenêtre</span>
       </div>
     </a>
-    <a href="">
+    <a href="https://europ-alu.com/portfolio/pergolas-motorisee/">
       <div class="portoflio-product-connexe-content" style="background-image: url(http://europ-alu.com/wp-content/uploads/2018/11/117559972_1003834186710727_5234565162923001571_o.jpg);">
         <span>Pergolas motorisée</span>
         <span>Pergolas</span>
       </div>
     </a>
-    <a href="">
+    <a href="https://europ-alu.com/portfolio/cloison-2/">
       <div class="portoflio-product-connexe-content" style="background-image: url(http://europ-alu.com/wp-content/uploads/2019/10/MG_7707.jpg);">
         <span>Cloison</span>
         <span>Cloison</span>
@@ -223,13 +223,54 @@
       background-size: cover;
     }
 
+    .portoflio-product-connexe-content:hover {
+      filter: brightness(0.7);
+    }
+
     .portoflio-product-connexe-content span {
       text-decoration: none;
-      opacity: 1;
+      opacity: 0;
       font-size: 22px;
       font-weight: 900;
       color: #ED4F3D;
     }
+
+    .portoflio-product-connexe-content:hover span:first-child {
+      animation: fade-up ease-in 0.3s forwards;
+    }
+    .portoflio-product-connexe-content:hover span:last-child {
+      animation: fade-down ease-in 0.3s forwards;
+    }
+
+    .portoflio-product-connexe-content span:last-child {
+      color: #fff;
+    }
+
+    @keyframes fade-up {
+      from {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fade-down {
+      from {
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+
+
+
+
   </style>
 </body>
 
